@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Turma</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 600px; }
+        .erro { color: red; font-weight: bold; margin-top: 10px; }
+        .formulario { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; background: #f9f9f9; }
+        input, button { padding: 8px; margin-right: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Gestão de Turmas</h1>
+    
+    <div class="formulario">
+        <h3>Adicionar Novo Aluno</h3>
+        <input type="text" id="inputMatricula" placeholder="Ex: MAT-003">
+        <input type="text" id="inputNome" placeholder="Nome do Aluno">
+        <button id="btnAdicionar">Matricular</button>
+        <div id="mensagem-erro" class="erro"></div>
+    </div>
+
+    <div id="tela-resultado"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
